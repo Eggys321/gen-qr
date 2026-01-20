@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/nav-brand.png" type="image/x-icon" />
+    <title>Gen Qr</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="d-flex justify-content-between offcanvas-heading">
+        <div class="d-md-none mobile-nav-logo">
+          <img src="assets/nav-brand.png" alt="nav logo" />
+        </div>
+        <div    class="d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#040305"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas-lg offcanvas-end offcanvas-main"
+        tabindex="-1"
+        id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#offcanvasResponsive"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body py-3">
+          <div class="d-none d-md-block ">
+            <img src="assets/nav-brand.png" alt="nav logo" />
+          </div>
+          <ul class="list-unstyled d-md-flex align-items-center gap-5 pt-3">
+            <li><a href="#" class="text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-decoration-none">How it works</a></li>
+            <li><a href="#" class="text-decoration-none">Documentation</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ's</a></li>
+            <li><a href="#" class="text-decoration-none">Contact us</a></li>
+            <li><a href="#" class="text-decoration-none">Log in</a></li>
+            <button id="nav-btn">Sign up</button>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
