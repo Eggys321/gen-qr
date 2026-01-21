@@ -1,59 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-
-:root{
-    --neutral-1:#0D0A0F;
-    --primary-main:#4B296B;
-    --white:#FFFFFF;
+:root {
+  --neutral-1: #0d0a0f;
+  --primary-main: #4b296b;
+  --white: #ffffff;
 }
 
-body{
-    font-family: "Manrope", sans-serif;
-
+body {
+  font-family: "Manrope", sans-serif;
 }
 
-a{
-    color: var(--neutral-1);
-    font-weight: 500;
-    font-size: 20px;
+a {
+  color: var(--neutral-1);
+  font-weight: 500;
+  font-size: 20px;
 }
 
-#nav-btn{
-    background-color: var(--primary-main);
-    width: 160px;
-    height: 52px;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 20px;
+#nav-btn {
+  background-color: var(--primary-main);
+  width: 160px;
+  height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.offcanvas-body{
+.offcanvas-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel h1 {
+  font-size: 68px;
+  font-weight: 800;
+}
+.carousel p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.carousel button {
+  background-color: var(--primary-main);
+  width: 240px;
+  height: 52px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 450px;
+}
+@media (max-width: 750px) {
+  .mobile-nav-logo img {
+    width: 120px;
+  }
+  .offcanvas-main {
+    max-width: 55%;
+  }
+
+  .offcanvas-heading {
+    padding: 20px 0;
+  }
+  .offcanvas-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .offcanvas-body li {
+    padding-top: 20px;
+  }
+  .offcanvas-body button {
+    margin-top: 20px;
+  }
+
+  .carousel h1 {
+    font-size: 28px;
+  }
+  .carousel p {
+    font-size: 12px;
+  }
+  .slider-img {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-}
-@media(max-width:750px){
-    .mobile-nav-logo img{
-        width: 120px;
-    }
-    .offcanvas-main{
-        max-width: 55%;
-    }
-    
-    .offcanvas-heading{
-        padding: 20px 0;
-    }
-    .offcanvas-body{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .offcanvas-body li{
-        padding-top: 20px;
-    }
-    .offcanvas-body button{
-        margin-top: 20px;
-    }
+  }
+  .slider-img img {
+    max-width: 240px;
+  }
+  .carousel button {
+    width: 240px;
+    height: 44px;
+    border-radius: 36px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 470px;
+  }
 }
