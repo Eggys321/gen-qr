@@ -63,6 +63,10 @@ a {
   position: absolute;
   top: 450px;
 }
+
+header section{
+    padding: 30px 0;
+}
 @media (max-width: 750px) {
   .mobile-nav-logo img {
     width: 120px;
@@ -111,4 +115,7 @@ a {
     position: absolute;
     top: 470px;
   }
+  header section{
+    padding: 6px 0;
+}
 }
