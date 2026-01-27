@@ -4,6 +4,7 @@
   --neutral-1: #0d0a0f;
   --primary-main: #4b296b;
   --white: #ffffff;
+  --primary-2:#DBD4E1;
 }
 
 body {
@@ -53,19 +54,67 @@ a {
   color: var(--white);
   font-weight: 500;
   font-size: 20px;
+
 }
 
+.get-started-btn{
+    margin-top: 50px;
+}
 .carousel {
   position: relative;
 }
 
 .carousel-indicators {
   position: absolute;
-  top: 450px;
+  top: 500px;
 }
 
-header section{
-    padding: 30px 0;
+header section {
+  padding: 30px 0;
+}
+
+/* main */
+.section-1{
+    background-color: var(--primary-2);
+    padding: 70px 0 30px 0;
+}
+.section-1 h2{
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--neutral-1);
+}
+.section-1 > p{
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--neutral-1);
+}
+.section-1-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.section-1-div-a{
+    flex: 1;
+    padding-right: 100px;
+}
+.section-1-div-a h1{
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primary-main);
+}
+.section-1-div-a p{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--neutral-1);
+    line-height: 1.7;
+}
+
+
+.section-1-div-b{
+    flex: 1;
 }
 @media (max-width: 750px) {
   .mobile-nav-logo img {
@@ -115,22 +164,44 @@ header section{
     position: absolute;
     top: 470px;
   }
-  header section{
+  header section {
     padding: 6px 0;
+  }
+  /* main */
+  .section-1{
+    background-color: white;
 }
+  .section-1-div{
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+.section-1-div-a h1{
+    font-size: 16px;
+}
+.section-1-div-a p{
+    padding-top: 20px;
+    font-size: 12px;
+    /* border: 2px solid blue; */
+}
+.section-1-div-a{
+    padding: 40px 0 00;
 }
 
-@media(max-width:890px){
-    .offcanvas-body {
+
+}
+
+@media (max-width: 890px) {
+  .offcanvas-body {
     flex-direction: column;
     align-items: flex-start;
   }
-   .offcanvas-body li {
+  .offcanvas-body li {
     padding-top: 20px;
   }
-  
+
   .offcanvas-body button {
     margin-top: 20px;
   }
-
 }
