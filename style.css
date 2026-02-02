@@ -154,7 +154,7 @@ header section {
 }
 
 .section-3-border{
-    border-bottom: 1px solid var(--primary-main);
+    border-bottom: 1.2px solid var(--primary-main);
 }
 /* section-4 */
 .section-4{
