@@ -158,8 +158,26 @@ header section {
 }
 /* section-4 */
 .section-4{
-  /* background-color: var(--primary-7); */
+  color: var(--white);
+  background-color: var(--primary-7);
+    padding: 40px 30px 0;
+
 }
+.section-4 h2{
+font-weight: 800;
+font-size: 40px;
+}
+.section-4 > p{
+font-weight: 500;
+font-size: 20px;
+}
+
+.section-4-inner p{
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
 
 @media (max-width: 890px) {
   .offcanvas-body {
@@ -215,6 +233,21 @@ header section {
   .section-2-div-b {
     padding: 40px 0 0 0;
   }
+  .section-3-border{
+    border-bottom: 0;
+}
+/* section-4 */
+.section-4 h2{
+font-size: 24px;
+}
+
+.section-4 img{
+  width: 48px;
+}
+
+.section-4  p{
+font-size: 12px;
+}
 }
 @media (max-width: 750px) {
   .mobile-nav-logo img {
