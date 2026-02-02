@@ -5,6 +5,7 @@
   --primary-main: #4b296b;
   --white: #ffffff;
   --primary-2: #dbd4e1;
+  --primary-7:#3F2259;
 }
 
 body {
@@ -87,23 +88,26 @@ header section {
   font-size: 24px;
   color: var(--neutral-1);
 }
-.section-1-div {
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.section-1-border{
   padding: 40px 30px;
+
 }
 
-.section-1-div-a {
+.flex-container-div-a{
   flex: 1;
   padding-right: 100px;
 }
-.section-1-div-a h1 {
+.flex-container-div-a h1 {
   font-weight: 700;
   font-size: 28px;
   color: var(--primary-main);
 }
-.section-1-div-a p {
+.flex-container-div-a p {
   padding-top: 20px;
   font-weight: 500;
   font-size: 20px;
@@ -111,7 +115,7 @@ header section {
   line-height: 1.7;
 }
 
-.section-1-div-b {
+.flex-container-div-b {
   flex: 1;
 }
 
@@ -145,8 +149,16 @@ header section {
 }
 /* section-3 */
 .section-3{
-    padding: 70px 0 30px 0;
+    padding-top: 70px ;
 
+}
+
+.section-3-border{
+    border-bottom: 1px solid var(--primary-main);
+}
+/* section-4 */
+.section-4{
+  /* background-color: var(--primary-7); */
 }
 
 @media (max-width: 890px) {
@@ -171,19 +183,19 @@ header section {
   .section-1 > p {
     font-size: 12px;
   }
-  .section-1-div {
+  .flex-container {
     flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
   }
-  .section-1-div-a h1 {
+  .flex-container-div-a h1 {
     font-size: 16px;
   }
-  .section-1-div-a p {
+  .flex-container-div-a p {
     padding-top: 20px;
     font-size: 12px;
   }
-  .section-1-div-a {
+  .flex-container-div-a {
     padding: 40px 0 0 0;
   }
   /* section-2 */
